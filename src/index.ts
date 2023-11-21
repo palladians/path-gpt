@@ -18,7 +18,6 @@ const run = async () => {
     })
   );
   writeJson("./out.json", contents);
-  console.log(contents);
 };
 
 run();

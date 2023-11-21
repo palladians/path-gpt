@@ -1,21 +1,21 @@
 {
   "name": "path-gpt",
-  "module": "dist/index.ts",
+  "module": "dist/index.cjs",
   "type": "module",
-  "version": "0.0.1",
-  "bin": "dist/index.js",
+  "version": "0.0.2",
+  "bin": "dist/index.cjs",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "bun build --target=node ./index.ts --outfile=dist/index.js",
-    "start": "node ./dist/index.js",
-    "postbuild": "npx rexreplace '^(#!.+\\n)?' '$1import { createRequire as createImportMetaRequire } from \"module\"; import.meta.require ||= (id) => createImportMetaRequire(import.meta.url)(id);\\n' -GM dist/index.js"
+    "build": "tsup && chmod +x dist/index.cjs",
+    "start": "node ./dist/index.cjs"
   },
   "devDependencies": {
     "@tsconfig/bun": "^1.0.1",
     "@types/fs-extra": "^11.0.4",
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "tsup": "^8.0.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
