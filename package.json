@@ -1,15 +1,15 @@
 {
   "name": "path-gpt",
-  "module": "dist/index.cjs",
+  "module": "dist/pathgpt",
   "type": "module",
-  "version": "0.0.2",
-  "bin": "dist/index.cjs",
+  "version": "0.0.3",
+  "bin": "dist/pathgpt",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup && chmod +x dist/index.cjs",
-    "start": "node ./dist/index.cjs"
+    "build": "bun build src/index.ts --outfile dist/pathgpt --target node --compile && chmod +x dist/pathgpt",
+    "start": "./dist/pathgpt"
   },
   "devDependencies": {
     "@tsconfig/bun": "^1.0.1",
