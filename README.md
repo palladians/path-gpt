@@ -1,15 +1,31 @@
 # path-gpt
 
-To install dependencies:
+Generate JSON file out of CWD recursive contents. Could be helpful to train custom GPTs with your repo.
+
+## Run
 
 ```bash
-bun install
+bunx path-gpt@latest
+# or
+npx path-gpt@latest
 ```
 
-To run:
+## Development
+
+Install
 
 ```bash
-bun run index.ts
+bun i
 ```
 
-This project was created using `bun init` in bun v1.0.11. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Build
+
+```bash
+bun run build
+```
+
+Run Dev version
+
+```bash
+bun run start
+```
