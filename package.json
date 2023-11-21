@@ -3,6 +3,10 @@
   "module": "dist/index.ts",
   "type": "module",
   "version": "0.0.1",
+  "bin": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "bun build --target=node ./index.ts --outfile=dist/index.js",
     "start": "node ./dist/index.js",
