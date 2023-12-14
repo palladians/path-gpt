@@ -1,1 +1,19 @@
-["bun.lockb", "yarn.lock", "package-lock.json", "pnpm-lock.yaml"]
+[
+  "bun.lockb",
+  "yarn.lock",
+  "package-lock.json",
+  "pnpm-lock.yaml",
+  "*.jpg",
+  "*.jpeg",
+  "*.png",
+  "*.svg",
+  "*.ico",
+  "*.pdf",
+  "*.gif",
+  "*.webp",
+  "*.ttf",
+  "*.otf",
+  "*.woff",
+  "*.eot",
+  ".env"
+]
