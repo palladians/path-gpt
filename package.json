@@ -2,7 +2,7 @@
   "name": "path-gpt",
   "module": "dist/pathgpt",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "bin": "dist/pathgpt",
   "files": ["dist"],
   "description": "Convert a repo into a single JSON file to feed GPT with.",
